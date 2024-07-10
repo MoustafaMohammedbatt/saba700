@@ -2,6 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <>hello</>
+    <>
+    <img src="/images/XOImgsCol/71r42LZ+adL.jpg" alt="" /></>
   );
 }
