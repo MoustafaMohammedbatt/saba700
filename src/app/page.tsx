@@ -1,8 +1,13 @@
+import Breadcrumb from "@/components/Common/Breadcrumb";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <>
-    <img src="/images/XOImgsCol/71r42LZ+adL.jpg" alt="" /></>
+    <Breadcrumb
+        pageName=" XO"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+      />
+    </>
   );
 }
