@@ -13,7 +13,11 @@ export default function Home() {
     const fetchPlayerName = async () => {
       try {
         const response = await axios.get(`${apiUrl}/GuessPlayer`);
-        setPlayerName(response.data.playerName);
+        if (response.status === 200) {
+          setPlayerName(response.data.playerName);
+        } else {
+          console.error('Unexpected response status:', response.status);
+        }
       } catch (error) {
         console.error('Error fetching player data:', error);
       }
