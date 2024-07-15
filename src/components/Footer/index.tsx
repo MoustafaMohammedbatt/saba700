@@ -27,7 +27,7 @@ const Footer = () => {
                   />
                 </Link>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                The Safary application aims to revolutionize the tourism industry by connecting tourists with local tour guides in Egypt
+                Saba700 for Football Games
                 </p>
                 <div className="flex items-center">
                   <a
@@ -35,7 +35,7 @@ const Footer = () => {
                     aria-label="social-link"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mr-6 text-body-color duration-300 hover:text-blue-500 dark:text-body-color-dark dark:hover:text-blue-500"
+                    className="mr-6 text-body-color duration-300 hover:text-cyan-600 dark:text-body-color-dark dark:hover:text-cyan-600"
                   >
                     <svg
                       width="18"
@@ -55,7 +55,7 @@ const Footer = () => {
                     aria-label="social-link"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mr-6 text-body-color duration-300 hover:text-blue-500 dark:text-body-color-dark dark:hover:text-blue-500"
+                    className="mr-6 text-body-color duration-300 hover:text-cyan-600 dark:text-body-color-dark dark:hover:text-cyan-600"
                   >
                     <svg
                       width="18"
@@ -77,7 +77,7 @@ const Footer = () => {
                     aria-label="social-link"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mr-6 text-body-color duration-300 hover:text-blue-500 dark:text-body-color-dark dark:hover:text-blue-500"
+                    className="mr-6 text-body-color duration-300 hover:text-cyan-600 dark:text-body-color-dark dark:hover:text-cyan-600"
                   >
                     <svg
                       width="18"
@@ -93,7 +93,7 @@ const Footer = () => {
                     aria-label="social-link"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-body-color duration-300 hover:text-blue-500 dark:text-body-color-dark dark:hover:text-blue-500"
+                    className="text-body-color duration-300 hover:text-cyan-600 dark:text-body-color-dark dark:hover:text-cyan-600"
                   >
                     <svg
                       width="17"
@@ -117,7 +117,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/blog"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-blue-500 dark:text-body-color-dark dark:hover:text-blue-500"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-cyan-600 dark:text-body-color-dark dark:hover:text-cyan-600"
                     >
                       Blog
                     </Link>
@@ -125,7 +125,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/contact"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-blue-500 dark:text-body-color-dark dark:hover:text-blue-500"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-cyan-600 dark:text-body-color-dark dark:hover:text-cyan-600"
                     >
                       Support
                     </Link>
@@ -133,7 +133,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/about"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-blue-500 dark:text-body-color-dark dark:hover:text-blue-500"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-cyan-600 dark:text-body-color-dark dark:hover:text-cyan-600"
                     >
                       About
                     </Link>
@@ -151,7 +151,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-blue-500 dark:text-body-color-dark dark:hover:text-blue-500"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-cyan-600 dark:text-body-color-dark dark:hover:text-cyan-600"
                     >
                       TOS
                     </Link>
@@ -159,7 +159,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-blue-500 dark:text-body-color-dark dark:hover:text-blue-500"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-cyan-600 dark:text-body-color-dark dark:hover:text-cyan-600"
                     >
                       Privacy Policy
                     </Link>
@@ -167,7 +167,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-blue-500 dark:text-body-color-dark dark:hover:text-blue-500"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-cyan-600 dark:text-body-color-dark dark:hover:text-cyan-600"
                     >
                       Refund Policy
                     </Link>
@@ -185,7 +185,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/contact"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-blue-500 dark:text-body-color-dark dark:hover:text-blue-500"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-cyan-600 dark:text-body-color-dark dark:hover:text-cyan-600"
                     >
                       Open Support Ticket
                     </Link>
@@ -193,7 +193,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-blue-500 dark:text-body-color-dark dark:hover:text-blue-500"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-cyan-600 dark:text-body-color-dark dark:hover:text-cyan-600"
                     >
                       Terms of Use
                     </Link>
@@ -201,7 +201,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/about"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-blue-500 dark:text-body-color-dark dark:hover:text-blue-500"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-cyan-600 dark:text-body-color-dark dark:hover:text-cyan-600"
                     >
                       About
                     </Link>
@@ -214,23 +214,23 @@ const Footer = () => {
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-8">
             <p className="text-center text-base text-body-color dark:text-white">
-              Template by{" "}
+              by{" "}
               <a
                 href="/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-blue-500"
+                className="hover:text-cyan-600"
               >
                 
               </a>{" "}
              
               <a
-                href="/"
+                href="https://www.instagram.com/moustafa_m_batt/?hl=en"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-blue-500"
+                className="hover:text-cyan-600"
               >
-                Safary App
+                ZFTT
               </a>
             </p>
           </div>
@@ -258,7 +258,7 @@ const Footer = () => {
                 cx="49.5"
                 cy="49.5"
                 r="49.5"
-                fill="#0000FF"
+                fill="#0d9488"
               />
             </mask>
             <g mask="url(#mask0_94:899)">
@@ -364,8 +364,8 @@ const Footer = () => {
                 y2="59.8878"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#0000FF" stopOpacity="0.62" />
-                <stop offset="1" stopColor="#0000FF" stopOpacity="0" />
+                <stop stopColor="#0d9488" stopOpacity="0.62" />
+                <stop offset="1" stopColor="#0d9488" stopOpacity="0" />
               </linearGradient>
               <linearGradient
                 id="paint1_linear_94:889"
@@ -375,8 +375,8 @@ const Footer = () => {
                 y2="20.668"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#0000FF" stopOpacity="0" />
-                <stop offset="1" stopColor="#0000FF" stopOpacity="0.51" />
+                <stop stopColor="#0d9488" stopOpacity="0" />
+                <stop offset="1" stopColor="#0d9488" stopOpacity="0.51" />
               </linearGradient>
               <linearGradient
                 id="paint2_linear_94:889"
@@ -386,8 +386,8 @@ const Footer = () => {
                 y2="25.1062"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#0000FF" stopOpacity="0.62" />
-                <stop offset="1" stopColor="#0000FF" stopOpacity="0" />
+                <stop stopColor="#0d9488" stopOpacity="0.62" />
+                <stop offset="1" stopColor="#0d9488" stopOpacity="0" />
               </linearGradient>
               <linearGradient
                 id="paint3_linear_94:889"
@@ -397,8 +397,8 @@ const Footer = () => {
                 y2="80.6826"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#0000FF" stopOpacity="0" />
-                <stop offset="1" stopColor="#0000FF" stopOpacity="0.51" />
+                <stop stopColor="#0d9488" stopOpacity="0" />
+                <stop offset="1" stopColor="#0d9488" stopOpacity="0.51" />
               </linearGradient>
               <linearGradient
                 id="paint4_linear_94:889"
@@ -408,8 +408,8 @@ const Footer = () => {
                 y2="58.2156"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#0000FF" stopOpacity="0.62" />
-                <stop offset="1" stopColor="#0000FF" stopOpacity="0" />
+                <stop stopColor="#0d9488" stopOpacity="0.62" />
+                <stop offset="1" stopColor="#0d9488" stopOpacity="0" />
               </linearGradient>
               <linearGradient
                 id="paint5_linear_94:889"
@@ -419,8 +419,8 @@ const Footer = () => {
                 y2="41.6598"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#0000FF" stopOpacity="0" />
-                <stop offset="1" stopColor="#0000FF" stopOpacity="0.51" />
+                <stop stopColor="#0d9488" stopOpacity="0" />
+                <stop offset="1" stopColor="#0d9488" stopOpacity="0.51" />
               </linearGradient>
             </defs>
           </svg>
