@@ -76,10 +76,10 @@ const Password: React.FC = () => {
       </div>
       <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-5">
         {data.map((item, index) => (
-          <div key={item.id} className="m-2">
+          <div key={item.id} className="m-2 ">
             <div
               className={classNames(
-                'w-24 h-24 sm:w-40 sm:h-40 bg-gray-200 dark:bg-gray-700 border border-gray-400 dark:border-gray-600 flex items-center justify-center cursor-pointer transform transition-transform duration-500',
+                'rounded-md w-24 h-24 sm:w-40 sm:h-40 bg-gray-200 dark:bg-gray-700 border border-gray-400 dark:border-gray-600 flex items-center justify-center cursor-pointer transform transition-transform duration-500',
                 { 'rotate-y-180': flipped[index] }
               )}
               onClick={() => handleFlip(index)}
@@ -92,6 +92,7 @@ const Password: React.FC = () => {
                 )}
               </div>
             </div>
+            
           </div>
         ))}
       </div>
