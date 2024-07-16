@@ -121,7 +121,7 @@ const Risk = () => {
           <div className="text-2xl font-bold mb-4 dark:text-white">{team1Score}</div>
           <div className="flex flex-col space-y-2">
             {[5, 10, 20, 40].map((points) => (
-              <button key={points} onClick={() => addPoints(1, points)} className="px-10 w-3/2 py-1 bg-blue-600 text-white rounded-md shadow-md">
+              <button key={points} onClick={() => addPoints(1, points)} className="px-10 w-3/2 py-1 bg-cyan-600 text-white rounded-md shadow-md">
                 +{points}
               </button>
             ))}
@@ -132,7 +132,7 @@ const Risk = () => {
           <div className="text-2xl font-bold mb-4 dark:text-white">{team2Score}</div>
           <div className="flex flex-col space-y-2">
             {[5, 10, 20, 40].map((points) => (
-              <button key={points} onClick={() => addPoints(2, points)} className="px-10 w-3/2 py-1 bg-green-600 text-white rounded-md shadow-md">
+              <button key={points} onClick={() => addPoints(2, points)} className="px-10 w-3/2 py-1 bg-green-700 text-white rounded-md shadow-md">
                 +{points}
               </button>
             ))}
