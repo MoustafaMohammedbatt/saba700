@@ -23,10 +23,10 @@ const Risk = () => {
     fetchData();
   }, []);
 
-  const openModal = (question) => {
-    setSelectedQuestion(question);
+  const openModal = (question, categoryIndex) => {
+    setSelectedQuestion({ ...question, categoryIndex });
     setIsModalOpen(true);
-    setClickedQuestions((prev) => [...prev, question]);
+    setClickedQuestions((prev) => [...prev, { ...question, categoryIndex }]);
   };
 
   const closeModal = () => {
@@ -34,7 +34,10 @@ const Risk = () => {
     setSelectedQuestion(null);
   };
 
-  const isClicked = (question) => clickedQuestions.some((q) => q.question === question.question);
+  const isClicked = (question, categoryIndex) =>
+    clickedQuestions.some(
+      (q) => q.question === question.question && q.categoryIndex === categoryIndex
+    );
 
   const handleStart = () => {
     if (intervalId !== null) return;
@@ -91,14 +94,13 @@ const Risk = () => {
                 <button
                   key={idx}
                   className={`relative w-full h-16 p-4 flex items-center justify-center rounded-md ${
-                    isClicked(item) ? 'bg-red-500 dark:bg-red-700' : 'bg-gray-300 hover:bg-gray-400 dark:bg-gray-700 dark:hover:bg-gray-600'
+                    isClicked(item, index)
+                      ? 'bg-red-500 dark:bg-red-700'
+                      : 'bg-gray-300 hover:bg-gray-400 dark:bg-gray-700 dark:hover:bg-gray-600'
                   } dark:text-white`}
-                  onClick={() => openModal(item)}
+                  onClick={() => openModal(item, index)}
                 >
                   {item.points}
-                  {isClicked(item) && (
-                    <span className="absolute top-2 right-2 text-xl font-bold text-white"></span>
-                  )}
                 </button>
               ))}
             </div>
@@ -109,9 +111,15 @@ const Risk = () => {
       <div className="flex flex-col items-center mt-5">
         <p className="text-lg mb-2 dark:text-white">Time: {time}s</p>
         <div className="flex space-x-2 m-5">
-          <button onClick={handleStart} className="px-4 py-2 bg-gray-800 text-white rounded-full shadow-md">Start</button>
-          <button onClick={handleStop} className="px-4 py-2 bg-gray-800 text-white rounded-full shadow-md">Stop</button>
-          <button onClick={handleReset} className="px-4 py-2 bg-gray-800 text-white rounded-full shadow-md">Reset</button>
+          <button onClick={handleStart} className="px-4 py-2 bg-gray-800 text-white rounded-full shadow-md">
+            Start
+          </button>
+          <button onClick={handleStop} className="px-4 py-2 bg-gray-800 text-white rounded-full shadow-md">
+            Stop
+          </button>
+          <button onClick={handleReset} className="px-4 py-2 bg-gray-800 text-white rounded-full shadow-md">
+            Reset
+          </button>
         </div>
       </div>
 
@@ -121,7 +129,11 @@ const Risk = () => {
           <div className="text-2xl font-bold mb-4 dark:text-white">{team1Score}</div>
           <div className="flex flex-col space-y-2">
             {[5, 10, 20, 40].map((points) => (
-              <button key={points} onClick={() => addPoints(1, points)} className="px-9 w-3/2 py-1 bg-cyan-600 text-white rounded-md shadow-md">
+              <button
+                key={points}
+                onClick={() => addPoints(1, points)}
+                className="px-9 w-3/2 py-1 bg-cyan-600 text-white rounded-md shadow-md"
+              >
                 +{points}
               </button>
             ))}
@@ -132,7 +144,11 @@ const Risk = () => {
           <div className="text-2xl font-bold mb-4 dark:text-white">{team2Score}</div>
           <div className="flex flex-col space-y-2">
             {[5, 10, 20, 40].map((points) => (
-              <button key={points} onClick={() => addPoints(2, points)} className="px-9 w-3/2 py-1 bg-green-700 text-white rounded-md shadow-md">
+              <button
+                key={points}
+                onClick={() => addPoints(2, points)}
+                className="px-9 w-3/2 py-1 bg-green-700 text-white rounded-md shadow-md"
+              >
                 +{points}
               </button>
             ))}
