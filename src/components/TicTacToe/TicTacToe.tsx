@@ -112,7 +112,10 @@ const TicTacToe = () => {
       <div className="flex space-x-4 m-4">
         <button onClick={Reset} className="px-4 py-2 bg-gray-800 text-white rounded-full shadow-md">Play Again</button>
         <button onClick={Change} className="px-4 py-2 bg-gray-800 text-white rounded-full shadow-md">Change Question</button>
-        <button onClick={Pass} className="px-4 py-2 bg-gray-800 text-white rounded-full shadow-md">Pass</button>
+         </div>
+      <div className="flex space-x-4 m-4">
+      <button onClick={Pass} className="px-4 py-2 bg-gray-800 text-white rounded-full shadow-md">Pass</button>
+     
       </div>
     </div>
   );

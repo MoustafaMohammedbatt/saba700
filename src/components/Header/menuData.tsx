@@ -9,7 +9,7 @@ const menuData: Menu[] = [
     },
     {
       id: 2,
-      title: "من اللاعب ",
+      title: "من اللاعب",
       path: "/GuessThePlayer",
       newTab: false,
     },
