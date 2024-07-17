@@ -54,6 +54,7 @@ const GuessPlayer = () => {
     setPlayerName('');
     fetchHints();
   };
+
   const handleStart = () => {
     if (intervalId !== null) return;
 
@@ -85,49 +86,48 @@ const GuessPlayer = () => {
 
   return (
     <div className="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 p-6 flex flex-col items-center justify-center">
-      <div className="w-3/4 h-96 bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
-        <div className="p-4 h-full flex flex-col">
-          <div className="max-h-48 overflow-y-auto flex-grow mt-5">
-            <ul className="list-disc pl-5 text-lg">
-              {hints.slice(0, hintIndex + 1).map((hint, index) => (
-                <li key={index} className="mb-2">
-                  {hint}
-                </li>
-              ))}
-            </ul>
-          </div>
+      <div className="w-3/4 h-96 bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden flex flex-col">
+        <div className="flex-grow p-4 overflow-y-auto">
+          <ul className="list-disc pl-5 text-lg space-y-2">
+            {hints.slice(0, hintIndex + 1).map((hint, index) => (
+              <li key={index} className="mb-2">
+                {hint}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
-      <div className="flex justify-between mt-4 space-x-4">
+      <div className="flex flex-col items-center mt-4 space-y-4">
+        <div className="flex justify-between space-x-4">
+          <button
+            className={`px-4 py-2 bg-gray-800 text-white rounded-full shadow-md ${hintIndex === hints.length - 1 ? 'opacity-50 cursor-not-allowed' : ''}`}
+            onClick={addHint}
+            disabled={hintIndex === hints.length - 1}
+          >
+            Add Hint
+          </button>
+          <button
+            className="px-4 py-2 bg-gray-800 text-white rounded-full shadow-md"
+            onClick={showPlayerName}
+          >
+            Show Player Name
+          </button>
+        </div>
+        <div className="flex justify-between space-x-4">
         <button
-          className={`px-4 py-2 bg-gray-800 text-white rounded-full shadow-md ${hintIndex === hints.length - 1 ? 'opacity-50 cursor-not-allowed' : ''}`}
-          onClick={addHint}
-          disabled={hintIndex === hints.length - 1}
-        >
-          Add Hint
-        </button>
-        <button
-          className="px-4 py-2 bg-gray-800 text-white rounded-full shadow-md"
-          onClick={showPlayerName}
-        >
-          Show Player Name
-        </button>
-      </div>
-      <div className="flex justify-between mt-4 space-x-4">
-      <button
-          className="px-4 py-2 bg-gray-800 text-white rounded-full shadow-md"
-          onClick={skipQuestion}
-        >
-          Skip Question
-        </button>
-      </div>
-
-      <div className="flex flex-col items-center mt-5">
-        <p className="text-lg mb-2 dark:text-white">Time: {time}s</p>
-        <div className="flex space-x-2 m-5">
-          <button onClick={handleStart} className="px-4 py-2 bg-gray-800 text-white rounded-full shadow-md">Start</button>
-          <button onClick={handleStop} className="px-4 py-2 bg-gray-800 text-white rounded-full shadow-md">Stop</button>
-          <button onClick={handleReset} className="px-4 py-2 bg-gray-800 text-white rounded-full shadow-md">Reset</button>
+            className="px-4 py-2 bg-gray-800 text-white rounded-full shadow-md"
+            onClick={skipQuestion}
+          >
+            Skip Question
+          </button>
+        </div>
+        <div className="flex flex-col items-center mt-4">
+          <p className="text-lg mb-2 dark:text-white">Time: {time}s</p>
+          <div className="flex space-x-2">
+            <button onClick={handleStart} className="px-4 py-2 bg-gray-800 text-white rounded-full shadow-md">Start</button>
+            <button onClick={handleStop} className="px-4 py-2 bg-gray-800 text-white rounded-full shadow-md">Stop</button>
+            <button onClick={handleReset} className="px-4 py-2 bg-gray-800 text-white rounded-full shadow-md">Reset</button>
+          </div>
         </div>
       </div>
       <Modal
