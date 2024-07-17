@@ -123,7 +123,7 @@ const Risk = () => {
         </div>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-4 mt-5">
+      <div className="flex flex-wrap justify-center gap-4 mt-5 mb-5">
         <div className="text-center bg-gray-200 dark:bg-gray-700 p-4 rounded-lg shadow-md flex flex-col items-center w-1/3">
           <div className="text-xl font-bold mb-2 dark:text-white">Team 1</div>
           <div className="text-2xl font-bold mb-4 dark:text-white">{team1Score}</div>
